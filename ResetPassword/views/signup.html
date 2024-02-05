@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h1>Sign Up</h1>
+            </header>
+            <form onsubmit="signup(event)">
+                <label for="username">
+                    <i class="fa fa-user"></i>Username:
+                </label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="email">
+                    <i class="fa fa-envelope"></i>Email:
+                </label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="password">
+                    <i class="fa fa-lock"></i>Password:
+                </label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="login.html">Existing user? Sign in</a>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/public/js/signup.js"></script>
+
+</body>
+</html>
