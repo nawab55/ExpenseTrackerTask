@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="/public/css/login.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form onsubmit="login(event)" id="loginForm" method="post">
+            <div class="txt_field">
+                <input type="email" id="email" name="email" required>
+                <span></span>
+                <label for="email">Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" name="password" required>
+                <span></span>
+                <label for="password">Password</label>
+            </div>
+            <!-- <div class="pass">Forget Password?</div> -->
+            
+            <button type="submit">Login</button>
+            <div class="pass">
+                <a href="forget.html">Forget Password?</a>
+            </div>
+            <div class="signup_link">
+                Not a member? <a href="signup.html">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/public/js/login.js"></script>
+
+</body>
+</html>
